@@ -37,7 +37,7 @@ int main (int argc, char **argv){
     }
     char server_response[256];
 
-    recv(sock, &server_response, sizeof(server_response),0);
+    recv(sock, &server_response, sizeof(server_response), 0);
 
     printf("Server sent this data : %s \n", server_response);
 
